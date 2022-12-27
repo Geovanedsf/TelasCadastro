@@ -7,34 +7,37 @@
 
     tools:context=".SecondFragment">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
+    <TextView
+        android:id="@+id/textViewCADASTRO"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="16dp" />
+        android:layout_marginTop="16dp"
+        android:text="CADASTRO"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonNameComplete"
         android:layout_width="334dp"
         android:layout_height="48dp"
-        android:ems="10"
         android:gravity="center"
-        android:hint="Nome completo"
+        android:hint="NOME COMPLETO"
         android:inputType="textPersonName"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="36dp" />
+        tools:layout_editor_absoluteY="55dp" />
 
     <EditText
         android:id="@+id/editTextTextEmailCadastro"
         android:layout_width="334dp"
         android:layout_height="48dp"
         android:layout_marginTop="16dp"
-        android:ems="10"
         android:gravity="center"
         android:hint="E-MAIL"
         android:inputType="textEmailAddress"
@@ -45,33 +48,182 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonNameComplete" />
 
     <EditText
-        android:id="@+id/editTextCPF"
+        android:id="@+id/TextCPF"
         android:layout_width="141dp"
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
-        android:ems="10"
         android:gravity="center"
         android:hint="CPF"
         android:inputType="number"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailCadastro" />
 
     <EditText
-        android:id="@+id/editTextRG"
+        android:id="@+id/TextRG"
         android:layout_width="141dp"
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
-        android:ems="10"
         android:gravity="center"
         android:hint="RG"
         android:inputType="number"
         android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.582"
-        app:layout_constraintStart_toEndOf="@+id/editTextCPF"
+        app:layout_constraintStart_toEndOf="@+id/TextCPF"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailCadastro" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="TELEFONE"
+        android:inputType="phone"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailCadastro" />
+
+    <EditText
+        android:id="@+id/TextDate"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="136dp"
+        android:gravity="center"
+        android:hint="DATA DE NASCIMENTO"
+        android:inputType="date"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailCadastro" />
+
+    <EditText
+        android:id="@+id/TextCEP"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="136dp"
+        android:gravity="center"
+        android:hint="CEP"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailCadastro" />
+
+    <EditText
+        android:id="@+id/TextEstado"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:hint="ESTADO"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailCadastro" />
+
+    <EditText
+        android:id="@+id/TextPais"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:hint="PAÍS"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailCadastro" />
+
+    <EditText
+        android:id="@+id/TextBairro"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="268dp"
+        android:gravity="center"
+        android:hint="BAIRRO"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailCadastro" />
+
+    <EditText
+        android:id="@+id/TextCidade"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="268dp"
+        android:gravity="center"
+        android:hint="CIDADE"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailCadastro" />
+
+    <EditText
+        android:id="@+id/TextLogradouro"
+        android:layout_width="297dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="336dp"
+        android:gravity="center"
+        android:hint="LOGRADOURO"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailCadastro" />
+
+    <EditText
+        android:id="@+id/TextNumeroRes"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:hint="NÚMERO RESIDENCIAL"
+        android:inputType="number"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailCadastro" />
+
+    <EditText
+        android:id="@+id/TextComplement"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="400dp"
+        android:gravity="center"
+        android:hint="COMPLEMENTO"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailCadastro" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="472dp"
+        android:text="CONCLUIR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailCadastro" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
