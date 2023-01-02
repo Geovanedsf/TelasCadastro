@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".FragmentThird">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
+        android:id="@+id/textViewStatemant"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Escolha seu tipo de faxina." />
+
+    <TextView
+        android:id="@+id/textViewEasyCleaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Faxina leve" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/faxinaleve"/>
+
+    <TextView
+        android:id="@+id/textViewMediumCleaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Faxina moderada" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:layout_marginTop="314dp"
+        android:src="@drawable/faxina"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewHardCleaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="515dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Faxina pesada" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="match_parent"
+        android:layout_height="184dp"
+        android:layout_marginTop="544dp"
+        android:src="@drawable/maxresdefault"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
 
 </FrameLayout>

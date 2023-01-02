@@ -9,10 +9,30 @@
         android:id="@+id/fragmentFirst"
         android:name="com.example.registerproject.FragmentFirst"
         android:label="FragmentFirst"
-        tools:layout="@layout/fragment_first"/>
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/actionFirstRegisterToSecond"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/actionFirstLoginToSecond"
+            app:destination="@id/fragmentThird" />
+        <action
+            android:id="@+id/actionFristForgotToFour"
+            app:destination="@id/fragmentFour" />
+    </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.example.registerproject.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/fragmentThird"
+        android:name="com.example.registerproject.FragmentThird"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
+    <fragment
+        android:id="@+id/fragmentFour"
+        android:name="com.example.registerproject.FragmentFour"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_four" />
 </navigation>
