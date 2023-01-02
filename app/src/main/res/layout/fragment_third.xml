@@ -20,7 +20,7 @@
         android:gravity="center"
         android:text="Escolha seu tipo de faxina."
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3Easy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,12 +29,12 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/imageButton3Easy"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="22dp"
         android:src="@drawable/faxinaleve"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonMedium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,21 +42,21 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imageButtonMedium"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="24dp"
         android:src="@drawable/faxina"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2Hard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3Easy"
         app:layout_constraintVertical_bias="0.5"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/imageButton2Hard"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:src="@drawable/maxresdefault"
@@ -64,7 +64,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMedium"
         app:layout_constraintVertical_bias="0.5"
         tools:ignore="SpeakableTextPresentCheck" />
 
