@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentPerfil">
+
+
+    <TextView
+        android:id="@+id/textNamePerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="Nome"
+        app:layout_constraintBottom_toTopOf="@+id/textEmailPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textEmailPerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="e-mail"
+        app:layout_constraintBottom_toTopOf="@+id/textCpfPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNamePerfil"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textCpfPerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="CPF"
+        app:layout_constraintBottom_toTopOf="@+id/textRgPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEmailPerfil"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textRgPerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="RG"
+        app:layout_constraintBottom_toTopOf="@+id/textPhonePerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCpfPerfil"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textPhonePerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="Telefone"
+        app:layout_constraintBottom_toTopOf="@+id/textCepPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRgPerfil"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textBirthPerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="Nascimento"
+        app:layout_constraintBottom_toTopOf="@+id/textCountryPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCepPerfil"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textCepPerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="CEP"
+        app:layout_constraintBottom_toTopOf="@+id/textBirthPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPhonePerfil"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textStatePerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="Estado"
+        app:layout_constraintBottom_toTopOf="@+id/textCityPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCountryPerfil"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textCountryPerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="País"
+        app:layout_constraintBottom_toTopOf="@+id/textStatePerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBirthPerfil"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textCityPerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="Cidade"
+        app:layout_constraintBottom_toTopOf="@+id/textDistrictPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textStatePerfil"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textDistrictPerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="Bairro"
+        app:layout_constraintBottom_toTopOf="@+id/textStreetPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCityPerfil"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textStreetPerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="Rua"
+        app:layout_constraintBottom_toTopOf="@+id/textStreetNumPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDistrictPerfil"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textStreetNumPerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="Número"
+        app:layout_constraintBottom_toTopOf="@+id/textComplementPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textStreetPerfil"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textComplementPerfil"
+        android:layout_width="252dp"
+        android:layout_height="32dp"
+        android:hint="Complemento"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPerfiltoService"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textStreetNumPerfil"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="389dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/buttonPerfiltoService"
+        android:layout_width="196dp"
+        android:layout_height="46dp"
+        android:text="Contratar serviço"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textComplementPerfil"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

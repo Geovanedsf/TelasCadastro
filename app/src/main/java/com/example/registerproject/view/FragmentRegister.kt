@@ -54,23 +54,5 @@ class FragmentRegister : Fragment(R.layout.fragment_register) {
             streetnumber = numberstreet.text.toString(),
             complement = complement.text.toString()
         )
-
-        println(name.text)
-        println(email.text)
-        println(cpf.text)
-        println(cpf.text)
-        println(rg.text)
-        println(phone.text)
-        println(password.text)
-        println(birth.text)
-        println(cep.text)
-        println(country.text)
-        println(district.text)
-        println(city.text)
-        println(state.text)
-        println(street.text)
-        println(numberstreet.text)
-        println(complement.text)
-
     }
 }

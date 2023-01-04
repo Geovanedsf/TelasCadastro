@@ -10,15 +10,15 @@
         android:name="com.example.registerproject.view.FragmentLogin"
         android:label="FragmentFirst"
         tools:layout="@layout/fragment_login">
+<!--        <action-->
+<!--            android:id="@+id/actionFirstForgotToFour"-->
+<!--            app:destination="@id/fragmentFour" />-->
         <action
-            android:id="@+id/actionFirstRegisterToSecond"
+            android:id="@+id/actionFragmentHomeToPerfil"
+            app:destination="@id/fragmentPerfil" />
+        <action
+            android:id="@+id/actionFragmentHomeToRegister"
             app:destination="@id/secondFragment" />
-        <action
-            android:id="@+id/actionFirstLoginToSecond"
-            app:destination="@id/fragmentThird" />
-        <action
-            android:id="@+id/actionFirstForgotToFour"
-            app:destination="@id/fragmentFour" />
     </fragment>
 
     <fragment
@@ -48,4 +48,9 @@
         android:name="com.example.registerproject.view.FragmentRequest"
         android:label="fragment_five"
         tools:layout="@layout/fragment_request" />
+    <fragment
+        android:id="@+id/fragmentPerfil"
+        android:name="com.example.registerproject.FragmentPerfil"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
 </navigation>
