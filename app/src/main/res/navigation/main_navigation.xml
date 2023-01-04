@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/fragmentFirst"
-        android:name="com.example.registerproject.FragmentFirst"
+        android:name="com.example.registerproject.view.FragmentLogin"
         android:label="FragmentFirst"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/actionFirstRegisterToSecond"
             app:destination="@id/secondFragment" />
@@ -17,22 +17,35 @@
             android:id="@+id/actionFirstLoginToSecond"
             app:destination="@id/fragmentThird" />
         <action
-            android:id="@+id/actionFristForgotToFour"
+            android:id="@+id/actionFirstForgotToFour"
             app:destination="@id/fragmentFour" />
     </fragment>
+
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.example.registerproject.SecondFragment"
+        android:name="com.example.registerproject.view.FragmentRegister"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_register" />
+
     <fragment
         android:id="@+id/fragmentThird"
-        android:name="com.example.registerproject.FragmentThird"
+        android:name="com.example.registerproject.view.FragmentServices"
         android:label="fragment_third"
-        tools:layout="@layout/fragment_third" />
+        tools:layout="@layout/fragment_services" >
+        <action
+            android:id="@+id/actionThirdTypeServiceToFive"
+            app:destination="@id/fiveFragment" />
+    </fragment>
+
     <fragment
         android:id="@+id/fragmentFour"
-        android:name="com.example.registerproject.FragmentFour"
+        android:name="com.example.registerproject.view.FragmentRecover"
         android:label="fragment_four"
-        tools:layout="@layout/fragment_four" />
+        tools:layout="@layout/fragment_recover" />
+
+    <fragment
+        android:id="@+id/fiveFragment"
+        android:name="com.example.registerproject.view.FragmentRequest"
+        android:label="fragment_five"
+        tools:layout="@layout/fragment_request" />
 </navigation>

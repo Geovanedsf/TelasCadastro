@@ -1,21 +1,21 @@
-package com.example.registerproject.Model
+package com.example.registerproject.model
 
 data class User(
 
-    var nome: String,
+    var name: String,
     var email: String,
     var cpf: String,
     var rg: String,
-    var tel: String,
-    var nascdate: String,
+    var phone: String,
+    var birth: String,
     var cep: String,
-    var nationality: String,
-    var state: String,
+    var country: String,
     var city: String,
+    var state: String,
     var district: String,
     var street: String,
     var streetnumber: String,
     var complement: String,
-    val senha: String,
+    val password: String,
 
-)
+    )

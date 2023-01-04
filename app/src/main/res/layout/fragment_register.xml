@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context=".SecondFragment">
+    tools:context=".view.FragmentRegister">
 
     <EditText
-        android:id="@+id/editTextTextPersonNameComplete"
+        android:id="@+id/editTextName"
         android:layout_width="335dp"
         android:layout_height="48dp"
         android:gravity="center"
@@ -35,7 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonNameComplete"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName"
         app:layout_constraintVertical_bias="0.5" />
 
     <EditText
@@ -103,12 +102,11 @@
         android:id="@+id/TextDate"
         android:layout_width="141dp"
         android:layout_height="48dp"
-
         android:gravity="center"
         android:hint="DATA DE NASCIMENTO"
         android:inputType="date"
         android:textSize="11sp"
-        app:layout_constraintBottom_toTopOf="@+id/TextPais"
+        app:layout_constraintBottom_toTopOf="@+id/TextCountry"
         app:layout_constraintEnd_toStartOf="@+id/TextCEP"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -123,7 +121,7 @@
         android:hint="CEP"
         android:inputType="number"
         android:textSize="11sp"
-        app:layout_constraintBottom_toTopOf="@+id/TextEstado"
+        app:layout_constraintBottom_toTopOf="@+id/TextState"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/TextDate"
@@ -131,37 +129,37 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <EditText
-        android:id="@+id/TextEstado"
+        android:id="@+id/TextState"
         android:layout_width="141dp"
         android:layout_height="48dp"
         android:gravity="center"
         android:hint="ESTADO"
         android:inputType="text"
         android:textSize="11sp"
-        app:layout_constraintBottom_toTopOf="@+id/TextBairro"
+        app:layout_constraintBottom_toTopOf="@+id/TextDistrict"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/TextPais"
+        app:layout_constraintStart_toEndOf="@+id/TextCountry"
         app:layout_constraintTop_toBottomOf="@+id/TextCEP"
         app:layout_constraintVertical_bias="0.5" />
 
     <EditText
-        android:id="@+id/TextPais"
+        android:id="@+id/TextCountry"
         android:layout_width="141dp"
         android:layout_height="48dp"
         android:gravity="center"
         android:hint="PAÍS"
         android:inputType="text"
         android:textSize="11sp"
-        app:layout_constraintBottom_toTopOf="@+id/TextCidade"
-        app:layout_constraintEnd_toStartOf="@+id/TextEstado"
+        app:layout_constraintBottom_toTopOf="@+id/TextCity"
+        app:layout_constraintEnd_toStartOf="@+id/TextState"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextDate"
         app:layout_constraintVertical_bias="0.5" />
 
     <EditText
-        android:id="@+id/TextBairro"
+        android:id="@+id/TextDistrict"
         android:layout_width="141dp"
         android:layout_height="48dp"
         android:gravity="center"
@@ -171,12 +169,12 @@
         app:layout_constraintBottom_toTopOf="@+id/TextLogradouro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/TextCidade"
-        app:layout_constraintTop_toBottomOf="@+id/TextEstado"
+        app:layout_constraintStart_toEndOf="@+id/TextCity"
+        app:layout_constraintTop_toBottomOf="@+id/TextState"
         app:layout_constraintVertical_bias="0.5" />
 
     <EditText
-        android:id="@+id/TextCidade"
+        android:id="@+id/TextCity"
         android:layout_width="141dp"
         android:layout_height="48dp"
         android:gravity="center"
@@ -184,10 +182,10 @@
         android:inputType="text"
         android:textSize="11sp"
         app:layout_constraintBottom_toTopOf="@+id/TextLogradouro"
-        app:layout_constraintEnd_toStartOf="@+id/TextBairro"
+        app:layout_constraintEnd_toStartOf="@+id/TextDistrict"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextPais"
+        app:layout_constraintTop_toBottomOf="@+id/TextCountry"
         app:layout_constraintVertical_bias="0.5" />
 
     <EditText
@@ -202,7 +200,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextBairro"
+        app:layout_constraintTop_toBottomOf="@+id/TextDistrict"
         app:layout_constraintVertical_bias="0.5" />
 
     <EditText

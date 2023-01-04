@@ -1,4 +1,4 @@
-package com.example.registerproject.Model
+package com.example.registerproject.model
 
 data class Schedule(
 
@@ -6,8 +6,7 @@ data class Schedule(
     var hour: String,
     var street: String,
     var cep: String,
-    var district: String,
     var houseNumber: String,
     var complement: String,
 
-)
+    )
