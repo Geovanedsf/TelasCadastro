@@ -2,8 +2,10 @@ package com.example.registerproject.view
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.registerproject.model.User
 import com.example.registerproject.R
 import com.example.registerproject.viewModel.UsersViewModel
@@ -14,6 +16,10 @@ class FragmentRegister : Fragment(R.layout.fragment_register) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        view.findViewById<Button>(R.id.buttonCreatAccount).setOnClickListener {
+            findNavController().navigate(R.id.actionCreatAccToPerfil)
+        }
 
         register(view)
 

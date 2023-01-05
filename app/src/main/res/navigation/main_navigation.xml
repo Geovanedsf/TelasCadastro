@@ -10,9 +10,9 @@
         android:name="com.example.registerproject.view.FragmentLogin"
         android:label="FragmentFirst"
         tools:layout="@layout/fragment_login">
-<!--        <action-->
-<!--            android:id="@+id/actionFirstForgotToFour"-->
-<!--            app:destination="@id/fragmentFour" />-->
+        <action
+            android:id="@+id/actionHomeToRecover"
+            app:destination="@id/fragmentRecover"/>
         <action
             android:id="@+id/actionFragmentHomeToPerfil"
             app:destination="@id/fragmentPerfil" />
@@ -25,7 +25,11 @@
         android:id="@+id/secondFragment"
         android:name="com.example.registerproject.view.FragmentRegister"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/actionCreatAccToPerfil"
+            app:destination="@id/fragmentPerfil" />
+    </fragment>
 
     <fragment
         android:id="@+id/fragmentThird"
@@ -38,9 +42,9 @@
     </fragment>
 
     <fragment
-        android:id="@+id/fragmentFour"
+        android:id="@+id/fragmentRecover"
         android:name="com.example.registerproject.view.FragmentRecover"
-        android:label="fragment_four"
+        android:label="fragment_recover"
         tools:layout="@layout/fragment_recover" />
 
     <fragment
@@ -48,9 +52,14 @@
         android:name="com.example.registerproject.view.FragmentRequest"
         android:label="fragment_five"
         tools:layout="@layout/fragment_request" />
+
     <fragment
         android:id="@+id/fragmentPerfil"
-        android:name="com.example.registerproject.FragmentPerfil"
+        android:name="com.example.registerproject.view.FragmentPerfil"
         android:label="fragment_perfil"
-        tools:layout="@layout/fragment_perfil" />
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/actionPerfilToService"
+            app:destination="@id/fragmentThird" />
+    </fragment>
 </navigation>

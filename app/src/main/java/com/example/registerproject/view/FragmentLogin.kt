@@ -24,7 +24,7 @@ class FragmentLogin : Fragment(R.layout.fragment_login) {
 
 
         view.findViewById<Button>(R.id.buttonForgot).setOnClickListener {
-//            findNavController().navigate(R.id.actionFirstForgotToFour)
+            findNavController().navigate(R.id.actionHomeToRecover)
         }
     }
 }
