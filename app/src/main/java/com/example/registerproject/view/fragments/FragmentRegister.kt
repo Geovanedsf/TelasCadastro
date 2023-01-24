@@ -1,4 +1,4 @@
-package com.example.registerproject.view
+package com.example.registerproject.view.fragments
 
 import android.os.Bundle
 import android.view.View
@@ -17,12 +17,7 @@ class FragmentRegister : Fragment(R.layout.fragment_register) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.buttonCreatAccount).setOnClickListener {
-            findNavController().navigate(R.id.actionCreatAccToPerfil)
-        }
-
         register(view)
-
     }
 
     private fun register(view: View) {
@@ -60,5 +55,15 @@ class FragmentRegister : Fragment(R.layout.fragment_register) {
             streetnumber = numberstreet.text.toString(),
             complement = complement.text.toString()
         )
+
+        view.findViewById<Button>(R.id.buttonCreatAccount).setOnClickListener {
+
+
+            val action =
+                com.example.registerproject.view.fragments.FragmentRegisterDirections.actionCreatAccToPerfil(
+                    user
+                )
+            findNavController().navigate(action)
+        }
     }
 }

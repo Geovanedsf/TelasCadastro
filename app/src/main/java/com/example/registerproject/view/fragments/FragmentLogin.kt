@@ -1,4 +1,4 @@
-package com.example.registerproject.view
+package com.example.registerproject.view.fragments
 
 import android.os.Bundle
 import android.view.View

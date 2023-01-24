@@ -1,7 +1,8 @@
 package com.example.registerproject.model
 
-data class User(
+import java.io.Serializable
 
+data class User(
     var name: String,
     var email: String,
     var cpf: String,
@@ -16,6 +17,5 @@ data class User(
     var street: String,
     var streetnumber: String,
     var complement: String,
-    val password: String,
-
-    )
+    var password: String
+) : Serializable

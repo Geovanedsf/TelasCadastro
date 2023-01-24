@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragmentFirst"
-        android:name="com.example.registerproject.view.FragmentLogin"
+        android:name="com.example.registerproject.view.fragments.FragmentLogin"
         android:label="FragmentFirst"
         tools:layout="@layout/fragment_login">
         <action
@@ -23,7 +23,7 @@
 
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.example.registerproject.view.FragmentRegister"
+        android:name="com.example.registerproject.view.fragments.FragmentRegister"
         android:label="fragment_second"
         tools:layout="@layout/fragment_register" >
         <action
@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/fragmentThird"
-        android:name="com.example.registerproject.view.FragmentServices"
+        android:name="com.example.registerproject.view.fragments.FragmentServices"
         android:label="fragment_third"
         tools:layout="@layout/fragment_services" >
         <action
@@ -43,23 +43,26 @@
 
     <fragment
         android:id="@+id/fragmentRecover"
-        android:name="com.example.registerproject.view.FragmentRecover"
+        android:name="com.example.registerproject.view.fragments.FragmentRecover"
         android:label="fragment_recover"
         tools:layout="@layout/fragment_recover" />
 
     <fragment
         android:id="@+id/fiveFragment"
-        android:name="com.example.registerproject.view.FragmentRequest"
+        android:name="com.example.registerproject.view.fragments.FragmentRequest"
         android:label="fragment_five"
         tools:layout="@layout/fragment_request" />
 
     <fragment
         android:id="@+id/fragmentPerfil"
-        android:name="com.example.registerproject.view.FragmentPerfil"
+        android:name="com.example.registerproject.view.fragments.FragmentPerfil"
         android:label="fragment_perfil"
         tools:layout="@layout/fragment_perfil" >
         <action
             android:id="@+id/actionPerfilToService"
             app:destination="@id/fragmentThird" />
+        <argument
+            android:name="user"
+            app:argType="com.example.registerproject.model.User" />
     </fragment>
 </navigation>

@@ -2,7 +2,7 @@ package com.example.registerproject.model
 
 class DataSource {
     fun getUser(callback: (users: User) -> Unit) {
-        Thread(Runnable {
+        Thread {
             Thread.sleep(1000)
             callback.invoke(
                 User(
@@ -23,29 +23,29 @@ class DataSource {
                     "123456"
                 )
             )
-        }).start()
+        }.start()
     }
 }
 
 
-class DataSourceService {
-    fun creatSchedule(callback: (schedules: List<Schedule>) -> Unit) {
-        Thread(Runnable {
-            Thread.sleep(1000)
-            callback.invoke(
-                listOf(
-                    Schedule(
-                        "",
-                        "",
-                        "",
-                        "",
-                        "",
-                        ""
-                    ),
-                )
-            )
-        }).start()
-    }
-}
+//class DataSourceService {
+//    fun creatSchedule(callback: (schedules: List<Schedule>) -> Unit) {
+//        Thread(Runnable {
+//            Thread.sleep(1000)
+//            callback.invoke(
+//                listOf(
+//                    Schedule(
+//                        "",
+//                        "",
+//                        "",
+//                        "",
+//                        "",
+//                        ""
+//                    ),
+//                )
+//            )
+//        }).start()
+//    }
+//}
 
 
